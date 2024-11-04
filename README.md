@@ -1,15 +1,28 @@
-# AIO SCAN - Web Security Scanner
-> A comprehensive tool for assessing web domain security by checking TLS, headers, cookies, and more.
+# 🌐 AIO SCAN - Web Security Scanner
+![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/aio-scan)
+![GitHub contributors](https://img.shields.io/github/contributors/yourusername/aio-scan)
+![GitHub stars](https://img.shields.io/github/stars/yourusername/aio-scan?style=social)
+![GitHub forks](https://img.shields.io/github/forks/yourusername/aio-scan?style=social)
+![GitHub License](https://img.shields.io/github/license/yourusername/aio-scan)
 
-![Banner Image](path/to/banner-image.png) <!-- Replace with your image path or URL -->
-
-## Overview
-
-AIO SCAN is a Python-based tool designed to analyze a web domain's security headers, TLS version, and cookie attributes. It provides a concise report and an option to export results to a CSV file.
+A comprehensive tool for assessing web domain security by checking TLS versions, headers, cookies, and more. This Python tool is ideal for security enthusiasts, developers, and network administrators aiming to enhance web security.
 
 ---
 
-### 📋 Features
+## 📌 Table of Contents
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Sample Output](#-sample-output)
+- [CSV Export](#-csv-export)
+- [Contributing](#-contributing)
+- [Future Enhancements](#-future-enhancements)
+- [License](#-license)
+
+---
+
+## ✨ Features
+
 - **TLS Version Detection**: Identify the TLS version for a given domain.
 - **Security Headers Check**: Verify the presence of critical security headers.
 - **Cookie Security**: Analyze cookies for `HTTPOnly` and `Secure` attributes.
@@ -18,8 +31,10 @@ AIO SCAN is a Python-based tool designed to analyze a web domain's security head
 
 ---
 
-### 🖥️ Installation
+## 💻 Installation
 
-Install the necessary libraries (you may also choose to let the script handle dependencies automatically):
+Ensure you have Python 3.x installed. The script will automatically handle dependencies if they’re missing.
+
+Install the necessary libraries (or let the script handle dependencies):
 ```bash
 pip install requests prettytable termcolor
