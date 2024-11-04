@@ -38,3 +38,52 @@ Ensure you have Python 3.x installed. The script will automatically handle depen
 Install the necessary libraries (or let the script handle dependencies):
 ```bash
 pip install requests prettytable termcolor
+
+
+🚀 Usage
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/aio-scan.git
+cd aio-scan
+Run the script:
+
+bash
+Copy code
+python aio_scan.py
+Enter the target domain:
+
+plaintext
+Copy code
+Enter the domain (e.g., example.com): example.com
+Review results: The script will display a security report in the terminal and prompt you to save it as a CSV file if desired.
+
+📄 Sample Output
+After running the scan, you’ll see a detailed output report like the one below:
+
+plaintext
+Copy code
+------------------------------------------------------
+┳┳┓┳┏┓┏┓┏┓┳┓┏┓┳┏┓  ┏┓┏┓┏┓┳┓┳┓┏┓┳┓
+┃┃┃┃┗┓┃ ┃┃┃┃┣ ┃┃┓  ┗┓┃ ┣┫┃┃┃┃┣ ┣┫  v0.2
+┛ ┗┻┗┛┗┛┗┛┛┗┻ ┻┗┛  ┗┛┗┛┛┗┛┗┛┗┗┛┛┗  BY PRAJWAL KHANTE
+------------------------------------------------------
+
+[+] Domain is live. Status code: 200
+
++-------------------------+-------------+
+| Header                  | Status      |
++-------------------------+-------------+
+| Server                  | Apache      |
+| TLS Version             | TLSv1.3     |
+| Content-Security-Policy | ENABLED     |
+| X-Content-Type-Options  | DISABLED    |
+| ...                     | ...         |
++-------------------------+-------------+
+The report includes:
+
+Server Information: The type of web server.
+TLS Version: The TLS version used by the domain.
+Security Headers: Status of critical security headers like Content-Security-Policy, X-Content-Type-Options, etc.
+You can also choose to export the results to a CSV file, named as <domain>_<timestamp>.csv, for easy documentation.
