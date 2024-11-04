@@ -39,14 +39,15 @@ Install the necessary libraries (or let the script handle dependencies):
 ```bash
 pip install requests prettytable termcolor
 
-
-🚀 Usage
+---
+## 🚀 Usage
 Clone the repository:
 
-bash
+```bash
 Copy code
 git clone https://github.com/yourusername/aio-scan.git
 cd aio-scan
+
 Run the script:
 
 bash
